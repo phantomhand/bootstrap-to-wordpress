@@ -91,6 +91,24 @@ img {
 	background: #db4b39;
 }
 
+blockquote {
+	padding: 0;
+	border: none;
+	font-style: italic;
+	font-weight: bold;
+	text-align: left;
+}
+
+blockquote cite {
+	display: block;
+	color: #777;
+	margin: 15px 0 0 0;
+}
+
+blockquote:before {
+	display: none;
+}
+
 /* === HERO === */
 
 #hero {
@@ -240,7 +258,19 @@ section {
 	font-weight: normal;
 }
 
+#kudos {
+	text-align: center;
+}
 
+.testimonial {
+	margin-bottom: 60px;
+}
+
+.testimonial img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
 
 /* === CUSTOM ICON SPRITES === */
 
