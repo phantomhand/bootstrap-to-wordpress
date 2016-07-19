@@ -43,6 +43,7 @@ h4 {
 
 p {
 	margin: 0 0 15px;
+	font-weight: 500;
 }
 
 p.lead {
@@ -220,6 +221,10 @@ section {
 
 .section-header {
 	text-align: center;
+}
+
+.section.main-content {
+	padding: 40px 0;
 }
 
 section h2 {
@@ -537,6 +542,19 @@ post-details i.fa:first-child {
 	border-top: solid 1px #eee;
 }
 
+
+/* === CUSTOM ICON SPRITES === */
+
+.resource {
+	width: 31.33333333%;
+	float: left;
+	margin: 0 3% 40px 0;
+}
+
+.resource:nth-child(3n) {
+	margin-right: 0;
+}
+
 /* === CUSTOM ICON SPRITES === */
 
 i.ci {
@@ -601,6 +619,12 @@ textarea {
 	#featurette iframe {
 		height: 240px;
 	}
+	
+	.resource {
+		width: 48%;
+		margin-right: 2%;
+		min-height: 750px;
+	}
 }
 
 @media screen and ( max-width : 568px ) {
@@ -612,5 +636,11 @@ textarea {
 	
 	#instructor .num span {
 		font-size: 16px;
+	}
+	
+	.resource {
+		width: 100%;
+		margin-right: 0;
+		min-height: 0;
 	}
 }
