@@ -14,6 +14,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap to Wordpress</title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -48,6 +49,7 @@
 		<div class="navbar-wrapper">
 			
 			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -56,8 +58,9 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
+						
 						<a class="navbar-brand" href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt="Bootstrap to Wordpress"></a>
-					</div>
+					</div><!-- navbar-header -->
 					
 					<!-- If the menu (WP admin area) is not set, then the "menu class" is applied to "container." In other words, it overwrites the "container_class". Ref: https://wordpress.org/support/topic/wp_nav_menu-menu_class-usage-bug -->
 					
@@ -81,8 +84,10 @@
 						</ul>
 					</div> <!-- navbar-collapse --> <!-- -->
 					
-				</div>
-			</div>
+				</div><!-- container -->
+				
+			</div><!-- navbar -->
 		
-		</div>
+		</div><!-- navbar-wrapper -->
+		
 	</header>
