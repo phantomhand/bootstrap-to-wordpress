@@ -15,10 +15,12 @@ get_header(); ?>
 	    				<div class="col-sm-5">
 			    			<img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo-badge.png" alt="Bootstrap to Wordpress" class="logo">
 	    				</div><!-- col -->
+	    				
+	    				
 			    		
 			    		<div class="col-sm-7 hero-text">
-				    		<h1>Bootstrap to WordPress</h1>
-				            <p class="lead">Earn An Extra $1k - $5k a Month by Learning to Code Your Very Own Responsive &amp; Custom WordPress Websites with Bootstrap</p>
+				    		<h1><?php bloginfo('name') ?></h1>
+				            <p class="lead"><?php bloginfo('description') ?></p>
 				            
 				            <div id="price-timeline">
 				            	<div class="price active">
