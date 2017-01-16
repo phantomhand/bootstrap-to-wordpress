@@ -761,7 +761,7 @@ footer li.signup-link a:hover {
 
 /* === BLOG === */
 
-.post, .widget {
+.post, .widget, #comments {
 	position: relative;
 	border: solid 1px #ddd;
 	background: white;
@@ -773,7 +773,8 @@ footer li.signup-link a:hover {
 
 .post header,
 .post .post-excerpt,
-.post .post-body {
+.post .post-body,
+#comments .comments-wrap {
 	padding: 20px;
 }
 
@@ -788,8 +789,9 @@ footer li.signup-link a:hover {
 	font-size: 24px;
 }
 
-.post-image {
+.post-image img {
 	height: auto;
+	
 }
 
 .post-details {
