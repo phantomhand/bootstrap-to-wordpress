@@ -34,19 +34,21 @@
 		 		<div class="col-sm-3">
 		 			<p><a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png" alt="Bootstrap to Wordpress"</a></p>
 		 		</div><!-- col -->
+		 		
 		 		<div class="col-sm-6">
-		 			<nav>
-		 				<ul class="list-unstyled list-inline">
-		 					<li><a href="">Home</a></li>
-		 					<li><a href="">Blog</a></li>
-		 					<li><a href="">Resources</a></li>
-		 					<li><a href="">Contact</a></li>
-		 					<li class="signup-link"><a href="">Sign up now</a></li>
-		 				</ul>
-		 			</nav><!-- nav -->
+		 			<!-- footer menu -->
+		 			<?php 
+						wp_nav_menu( array( 
+							
+							'theme_location'	=> 'footer',
+							'container'			=> 'nav',
+							'menu_class'		=> 'list-unstyled list-inline'
+						) );
+					?><!-- footer menu -->		
 		 		</div><!-- col -->
+		 		
 		 		<div class="col-sm-3">
-		 			<p class="pull-right">&copy; 2016 Frank Aveni</p>
+		 			<p class="pull-right">&copy; <?php /* bloginfo('name') */ ?> <?php echo date ('Y'); ?> <?php /* the_author_link(); */ ?> Frank Aveni</p>
 		 		</div><!-- col -->
 			</div><!-- container -->
 		</footer>
